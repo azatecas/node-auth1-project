@@ -11,7 +11,7 @@ exports.seed = function(knex) {
       password: "superior"
     },
     {
-      username: "josia",
+      username: "josiah",
       password: "superduper"
     },
   ]);
