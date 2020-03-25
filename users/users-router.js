@@ -3,13 +3,12 @@ const router = require("express").Router();
 const User = require('./users-model.js');
 
 router.get("/", (req, res) => {
-    User.find()
+    User
+        .find()
         .then(user => {
-            res.status(200).json({currentUser: user});
+            res.json(user);
         })
-        .catch(err => {
-            res.status(500).json({error: err})
-        })
+        .catch(err => res.send(err));
 })
 
 module.exports = router;

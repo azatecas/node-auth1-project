@@ -24,7 +24,7 @@ function findById(id) {
             .first();
 }
 
-function findBy(fileter) {
+function findBy(filter) {
     return db("users")
             .where(filter);
 }
